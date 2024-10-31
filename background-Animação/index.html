@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de animação</title>
+    <style>
+        .div {
+            display: flex;
+            width: 60vw; /* Ajuste a largura para ocupar a tela inteira */
+            height: 60vh; /* Ajuste a altura para ocupar a tela inteira */
+            background-size: cover; /* Ajusta a imagem para cobrir toda a área do elemento */
+            box-shadow: 20px 20px 10px gray;
+            animation: slider 10s linear infinite;
+        }
+
+        @keyframes slider {
+            0% {
+                background-image: url('img/1.jpg');
+            }
+            30% {
+                background-image: url('img/2.jpg');
+            }
+            60% {
+                background-image: url('img/3.jpg');
+            }
+            100% {
+                background-image: url('img/4.jpg');
+            }
+            50% {
+                background-image: url('img/5.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div> 
+</body>
+</html>
